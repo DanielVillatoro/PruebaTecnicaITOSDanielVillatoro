@@ -1,0 +1,57 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+<div class="text-center">
+    <p>
+        Generar dos arreglos A y B con 10 valores aleatorios de letras del abecedario y mostrar los
+        siguientes resultados:
+    </p>
+
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <button class="btn btn-success" onclick="GetList()">Generar <i class="fas fa-check-circle"></i></button>
+    </div>
+    <div class="col-md-5">
+        <h4>Lista A:</h4>
+        <ul class="list-group" id="AList">
+        </ul>
+    </div>
+    <div class="col-md-5">
+        <h4>Lista B:</h4>
+        <ul class="list-group" id="BList">
+        </ul>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <h4>
+            Unión: 𝐴⋃𝐵
+        </h4>
+        <ul class="list-group" id="unionList">
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <h4>Intersección 𝐴⋂B</h4>
+        <ul class="list-group" id="intersectionList">
+        </ul>
+    </div>
+
+    <div class="col-md-3">
+        <h4>
+            Diferencia: 𝐴∆𝐵
+        </h4>
+        <ul class="list-group" id="differenceList">
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <h4>Diferencia Simétrica: 𝐴 − B</h4>
+        <ul class="list-group" id="symmetricalDifferenceList">
+        </ul>
+    </div>
+</div>
+
+<script src="~/js/ArrayOperations.js" asp-append-version="true"></script>

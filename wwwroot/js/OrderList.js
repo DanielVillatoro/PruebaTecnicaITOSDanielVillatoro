@@ -4,7 +4,7 @@
     var element;
     for (var i = 0; i < 20; i++) {
         element = Math.trunc(Math.random() * (101 - 1) + 1)
-        htmlData += ' <li class="list-group-item">' + element +'</li>';
+        htmlData += ' <li class="list-group-item">' + element + '</li>';
         arrayInt.push(element);
     }
     $("#firtsList").html(htmlData);
