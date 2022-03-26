@@ -1,0 +1,31 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+<div class="text-center">
+    <p>
+        Generar un arreglo con 20 números aleatorios de 1 a 100 y luego organizarlo de menor a
+        mayor sin utilizar la sentencia .sort().
+    </p>
+
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <button class="btn btn-success" onclick="GetList()">Generar <i class="fas fa-check-circle"></i></button>
+    </div>
+    <div class="col-md-3">
+        <h4>Lista Desordenada:</h4>
+        <ul class="list-group" id="firtsList">
+
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <h4>Lista Ordenada:</h4>
+        <ul class="list-group" id="secondList">
+
+        </ul>
+    </div>
+</div>
+
+<script src="~/js/OrderList.js" asp-append-version="true"></script>

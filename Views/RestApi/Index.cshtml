@@ -1,0 +1,54 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+<div class="text-center">
+    <p>
+        Se debe realizar una consulta tipo Rest al API de banco de MX del tipo de cambio de los
+        últimos 5 días y mostrarlo en una tabla con fecha y tipo de cambio, a través de una página
+        html básica.
+    </p>
+
+</div>
+
+@*<div class="form-group">*@
+<div class="row">
+    <div class="col-md-3">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div id="btnGroupAddonCol" class="input-group-text bg-primary" style="color:white">Columna:  </div>
+            </div>
+            <input type="number" placeholder="Columna." class="form-control" id="colInput" aria-describedby="btnGroupAddonCol" />
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div id="btnGroupAddonRow" class="input-group-text bg-primary" style="color:white">Fila:  </div>
+            </div>
+            <input type="number" placeholder="Fila." class="form-control" id="rowInput" aria-describedby="btnGroupAddonRow" />
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <button class="btn btn-success" onclick="GetTable()">Generar <i class="fas fa-check-circle"></i></button>
+    </div>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-hover">
+        <thead id="theadTable">
+            @*<tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>*@
+        </thead>
+        <tbody id="tbodyTable">
+        </tbody>
+    </table>
+</div>
+@*</div>*@
+
+<script src="~/js/Table.js" asp-append-version="true"></script>
