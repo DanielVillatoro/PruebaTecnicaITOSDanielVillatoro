@@ -1,0 +1,35 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+<div class="text-center">
+    <p>
+        Crear dos input, filas y columnas donde se ingresan estos datos y se genere automáticamente
+        una tabla con las dimensiones suministradas
+    </p>
+
+</div>
+
+@*<div class="form-group">*@
+    <div class="row">
+        <div class="col-md-4">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div  id="btnGroupAddonYear" ><button class="btn-primary btn" onclick="GetResult()">Determinar <i class="fas fa-search"></i></button> </div>
+                </div>
+                <input type="number" placeholder="Ingrese un año." class="form-control" aria-label="Ingrese un año" aria-describedby="btnGroupAddonYear" id="yearInput" onkeyup="cleanInput()"/>
+            </div>
+
+        </div>
+        <div class="col-md-6">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text bg-success" id="btnGroupAddonRes" style="color:white">Resultado: </div>
+                </div>
+                <input type="text"  class="form-control" aria-label="Resultado" aria-describedby="btnGroupAddonRes" readonly id="resultInput"/>
+            </div>
+        </div>
+    </div>
+@*</div>*@
+
+<script src="~/js/Bisiesto.js" asp-append-version="true"></script>
