@@ -1,4 +1,8 @@
-﻿const GetList = () => {
+﻿/**
+ * Funcion que ordena y muestra la lista de numeros del 1 al 100 ordenada/desordenada en un table visualmente
+ * @param 
+*/
+const GetList = () => {
     let arrayInt = [];
     let htmlData = "";
     var element;
@@ -21,14 +25,4 @@
     }
     $("#secondList").html(htmlData);
     console.log(arrayInt);
-    //const colTotal = $("#colInput").val();
-    //var htmlData = "<tr>";
-    //for (var i = 0; i < colTotal; i++) {
-    //    htmlData += "<th scope='col'>";
-    //    htmlData += "Col-" + i;
-    //    htmlData += "</th>";
-    //}
-    //htmlData += "</tr>";
-    //$("#theadTable").html(htmlData);
-    //console.log(Math.trunc(Math.random() * (101 - 1) + 1));
 }

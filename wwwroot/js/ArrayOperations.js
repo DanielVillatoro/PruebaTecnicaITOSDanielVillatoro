@@ -1,4 +1,8 @@
-﻿const GetList = () => {
+﻿/**
+ * Funcion que crea 2 listas con letras del abecedario totalmente aleatorias.
+ * @param.
+*/
+const GetList = () => {
     let arrayA = [];
     let arrayB = [];
     let htmlDataA = "";
@@ -21,6 +25,9 @@
     SymmetricalDifferenceAB(arrayA, arrayB);
 }
 
+/**
+ * Retorna una letra del abecedario totalmente aleatoria.
+*/
 const GetChart=() =>{
     var result = '';
     var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -29,7 +36,12 @@ const GetChart=() =>{
     return result;
 }
 
+/**
+ * Funcion que realiza el UNION de ambas listas y la muestra en pantalla mediante un table.
+ * @param {Array} listA lista A con letras aleatorias.
+ *  * @param {Array} listB lista B con letras aleatorias.
 
+*/
 const UnionAB = (listA,listB) => {
     var concatArray = listA.concat(listB);
     var arrayUnique = new Set(concatArray);
@@ -42,6 +54,12 @@ const UnionAB = (listA,listB) => {
     $("#unionList").html(htmlData);
 }
 
+/**
+ * Funcion que realiza el UNION de ambas listas y la muestra en pantalla mediante un table.
+ * @param {Array} listA lista A con letras aleatorias.
+ *  * @param {Array} listB lista B con letras aleatorias.
+
+*/
 const IntersectionAB = (listA, listB) => {
     const intersectionABArray = new Set((listA.filter(value => listB.includes(value))));
     let htmlData = "";
@@ -51,6 +69,12 @@ const IntersectionAB = (listA, listB) => {
     $("#intersectionList").html(htmlData);
 }
 
+/**
+ * Funcion que realiza el UNION de ambas listas y la muestra en pantalla mediante un table.
+ * @param {Array} listA lista A con letras aleatorias.
+ *  * @param {Array} listB lista B con letras aleatorias.
+
+*/
 const DifferenceAB = (listA, listB) => {
     const differenceABArray = new Set((listA.filter(elemento => listB.indexOf(elemento) == -1)));
     let htmlData = "";
@@ -60,6 +84,12 @@ const DifferenceAB = (listA, listB) => {
     $("#differenceList").html(htmlData);
 }
 
+/**
+ * Funcion que realiza el UNION de ambas listas y la muestra en pantalla mediante un table.
+ * @param {Array} listA lista A con letras aleatorias.
+ *  * @param {Array} listB lista B con letras aleatorias.
+
+*/
 const SymmetricalDifferenceAB = (listA, listB) => {
     let aUnique = new Set(listA);
     let bUnique = new Set(listB);

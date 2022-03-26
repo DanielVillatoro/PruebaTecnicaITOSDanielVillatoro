@@ -13,7 +13,7 @@
 
 @*<div class="form-group">*@
 <div class="row">
-    <div class="col-md-3">
+    @*<div class="col-md-3">
         <div class="input-group">
             <div class="input-group-prepend">
                 <div id="btnGroupAddonCol" class="input-group-text bg-primary" style="color:white">Columna:  </div>
@@ -28,22 +28,20 @@
             </div>
             <input type="number" placeholder="Fila." class="form-control" id="rowInput" aria-describedby="btnGroupAddonRow" />
         </div>
-    </div>
+    </div>*@
 
     <div class="col-md-3">
-        <button class="btn btn-success" onclick="GetTable()">Generar <i class="fas fa-check-circle"></i></button>
+        <button class="btn btn-success" onclick="GetData()">Generar <i class="fas fa-check-circle"></i></button>
     </div>
 </div>
 
 <div class="table-responsive">
     <table class="table table-hover">
         <thead id="theadTable">
-            @*<tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                </tr>*@
+            <tr>
+                <th scope="col">Fecha</th>
+                <th scope="col">Valor</th>
+            </tr>
         </thead>
         <tbody id="tbodyTable">
         </tbody>
@@ -51,4 +49,4 @@
 </div>
 @*</div>*@
 
-<script src="~/js/Table.js" asp-append-version="true"></script>
+<script src="~/js/RestApi.js" asp-append-version="true"></script>
