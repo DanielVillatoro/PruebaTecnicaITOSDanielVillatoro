@@ -88,7 +88,6 @@ const DifferenceAB = (listA, listB) => {
  * Funcion que realiza el UNION de ambas listas y la muestra en pantalla mediante un table.
  * @param {Array} listA lista A con letras aleatorias.
  *  * @param {Array} listB lista B con letras aleatorias.
-
 */
 const SymmetricalDifferenceAB = (listA, listB) => {
     let aUnique = new Set(listA);
