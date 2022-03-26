@@ -11,25 +11,43 @@
 </div>
 
 @*<div class="form-group">*@
-    <div class="row">
-        <div class="col-md-4">
-            <div class="input-group">
-                <div class="input-group-prepend">
-                    <div  id="btnGroupAddonYear" ><button class="btn-primary btn" onclick="GetResult()">Determinar <i class="fas fa-search"></i></button> </div>
-                </div>
-                <input type="number" placeholder="Ingrese un año." class="form-control" aria-label="Ingrese un año" aria-describedby="btnGroupAddonYear" id="yearInput" onkeyup="cleanInput()"/>
+<div class="row">
+    <div class="col-md-3">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div id="btnGroupAddonCol" class="input-group-text bg-primary" style="color:white">Columna:  </div>
             </div>
-
-        </div>
-        <div class="col-md-6">
-            <div class="input-group">
-                <div class="input-group-prepend">
-                    <div class="input-group-text bg-success" id="btnGroupAddonRes" style="color:white">Resultado: </div>
-                </div>
-                <input type="text"  class="form-control" aria-label="Resultado" aria-describedby="btnGroupAddonRes" readonly id="resultInput"/>
-            </div>
+            <input type="number" placeholder="Columna." class="form-control" id="colInput" aria-describedby="btnGroupAddonCol" />
         </div>
     </div>
+    <div class="col-md-3">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div id="btnGroupAddonRow" class="input-group-text bg-primary" style="color:white">Fila:  </div>
+            </div>
+            <input type="number" placeholder="Fila." class="form-control" id="rowInput" aria-describedby="btnGroupAddonRow" />
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <button class="btn btn-success" onclick="GetTable()">Generar <i class="fas fa-check-circle"></i></button>
+    </div>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-hover">
+        <thead id="theadTable">
+            @*<tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+            </tr>*@
+        </thead>
+        <tbody id="tbodyTable">
+        </tbody>
+    </table>
+</div>
 @*</div>*@
 
-<script src="~/js/Bisiesto.js" asp-append-version="true"></script>
+<script src="~/js/Table.js" asp-append-version="true"></script>
